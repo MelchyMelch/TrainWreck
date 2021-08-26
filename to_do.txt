@@ -1,0 +1,14 @@
+STREAM PREP:
+- break code into functions
+- set up the repo
+- update ppt with below
+
+DURING STREAM:
+- more math operations --> Handle 1/0 situation by audience suggestion
+- random error messages, (line 42 --> line forty-two) --> Get library (inflect)
+- comparison operators
+- func -> jump to random spot in the code
+- fun sorting
+- find the digital root of a number
+- File IO
+- concat

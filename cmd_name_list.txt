@@ -1,0 +1,17 @@
+If Condition -- "If This, do that." --> 'Potato' by MelchyMelch
+Else Condition -- "Otherwise do this" --> 'FrenchFry' by CPSuperstore
+Equals Operator -- "Does This equal That" --> 'ghostbusters2016' by justjeffrey
+NOT Operator -- "If something DOES NOT equal something else" --> 'elephant' by MelchyMelch
+Addition Operator -- "To add two values together" --> 'ouchie' by justjeffrey
+Print To Console -- "Display Out" --> 'Yell' by MelchyMelch
+Comment Character -- "Ignore this line (from here)" --> 'FreeTShirts' by justjeffrey
+Input -- "User provided console input" --> 'S_O_U_P' by justjeffrey
+Value Assignment -- "Saving a value" --> 'hatred' by justjeffrey
+Loop Operator -- "Runs anything within a loop, while condition is true"
+                            --> 'JGWentworth877CashNow' by MelchyMelch
+Code Block Identifier -- "Short but crazy things" --> 'NOTThis' by MelchyMelch
+[NO ANYMORE] Space Symbol -- "The Final Frontier" --> 'Ƹ' by CPSuperstore
+Command Assignment -- "If assigning value through a command"
+                    --> 'ISummonYouToFulfillYourOath' by CPSuperstore
+Subtraction Operator -- "Subtract Numbers" --> '+' by terminatethemate
+Print Expression -- "Print the output of the following expression" --> 'death' by CPSuperstore
