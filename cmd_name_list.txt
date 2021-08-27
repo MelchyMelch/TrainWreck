@@ -1,3 +1,5 @@
+STREAM #1
+=========
 If Condition -- "If This, do that." --> 'Potato' by MelchyMelch
 Else Condition -- "Otherwise do this" --> 'FrenchFry' by CPSuperstore
 Equals Operator -- "Does This equal That" --> 'ghostbusters2016' by justjeffrey
@@ -10,8 +12,28 @@ Value Assignment -- "Saving a value" --> 'hatred' by justjeffrey
 Loop Operator -- "Runs anything within a loop, while condition is true"
                             --> 'JGWentworth877CashNow' by MelchyMelch
 Code Block Identifier -- "Short but crazy things" --> 'NOTThis' by MelchyMelch
-[NO ANYMORE] Space Symbol -- "The Final Frontier" --> 'Ƹ' by CPSuperstore
+[YES ANYMORE] Space Symbol -- "The Final Frontier" --> 'Ƹ' by CPSuperstore
 Command Assignment -- "If assigning value through a command"
                     --> 'ISummonYouToFulfillYourOath' by CPSuperstore
 Subtraction Operator -- "Subtract Numbers" --> '+' by terminatethemate
 Print Expression -- "Print the output of the following expression" --> 'death' by CPSuperstore
+
+
+STREAM #2
+=========
+Multiplication -- --> 'iAmLonley' by CPSuperstore
+Division -- --> 'Conquer' by MelchyMelch
+Digital Root -- --> 'DangDoors' by MelchyMelch
+NEED NAMES BELOW:
+Less Than Condition -- --> '' by
+Greater Than Condition -- --> '' by
+Less Than or Equal to Condition -- --> '' by
+Greater Than or Equal to Condition -- --> '' by
+Func-JumpToRandomLineInCode -- --> '' by
+Read from File -- --> '' by
+Write to File -- --> '' by
+Concat -- --> '' by
+Random Number Generation -- --> '' by
+Sort -- --> '' by
+    random -- --> '' by
+    sleep -- --> '' by

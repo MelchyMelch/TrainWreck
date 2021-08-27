@@ -1,9 +1,12 @@
+import random
 import sys
 
 import train_wreck_src.conditional as conditional
 import train_wreck_src.io as io
 import train_wreck_src.math as math
 import train_wreck_src.memory as memory
+import train_wreck_src.other as other
+import train_wreck_src.sorting as sorting
 
 
 def run_file(path: str):
@@ -30,6 +33,15 @@ def run_file(path: str):
                     running = True
                     break
 
+                if line[0] == "RandoJump":
+                    f.seek(0)
+                    contents = f.readlines()
+                    selected_line = random.randint(0, len(contents) - 1)
+                    print(f"I'M JUMPING TO LINE {selected_line}! HERE WE GOOOO~!!")
+                    file_data = contents[selected_line:]
+                    running = True
+                    break
+
                 if line[0] == "Potato":  # If Condition
                     left = memory.get_value(line[1])
                     operator = line[2]
@@ -42,7 +54,6 @@ def run_file(path: str):
 
 
 def run_command(command: list):
-    # print(command)
     try:
         if command[1].lower() == 'hatred':  # Saving Values into Variables
             memory.set_value(command[2], command[0])
@@ -58,15 +69,46 @@ def run_command(command: list):
 
     try:
         if command[1] == "+":
-            return math.subtraction(memory.get_value(command[0]), memory.get_value(command[2]))
+            return math.subtract(memory.get_value(command[0]), memory.get_value(command[2]))
 
         if command[1] == "ouchie":
-            return math.addition(memory.get_value(command[0]), memory.get_value(command[2]))
+            return math.add(memory.get_value(command[0]), memory.get_value(command[2]))
+
+        if command[1] == "iAmLonley":
+            return math.multiply(memory.get_value(command[0]), memory.get_value(command[2]))
+
+        if command[1] == "Conquer":
+            return math.divide(memory.get_value(command[0]), memory.get_value(command[2]))
+
+        if command[1] == "DangDoors":
+            return math.digital_root(memory.get_value(command[0]))
+
+        if command[1] == "concat":
+            return other.concat(memory.get_value(command[0]), memory.get_value(command[2]))
+
+        if command[0] == "sort":
+            if command[1] == "random":
+                return ", ".join(str(i) for i in sorting.random_sort(command[2:]))
+
+            if command[1] == "sleep":
+                return ", ".join(str(i) for i in sorting.sleep_sort(command[2:]))
+
     except IndexError:
         pass
 
     if command[0] == "Yell":
         print(memory.get_value(" ".join(command[1:])))
+
+    if command[0] == "read":
+        return io.read_from_file(" ".join(command[1:]))
+
+    if command[0] == "random":
+        return math.random_number_generator(
+            memory.get_value(command[1]), memory.get_value(command[2])
+        )
+
+    if command[0] == "write":
+        return io.write_to_file(" ".join(command[2:]), memory.get_value(command[1]))
 
     if command[0] == "death":
         print(run_command(command[1:]))

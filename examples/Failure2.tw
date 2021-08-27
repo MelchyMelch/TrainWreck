@@ -1,0 +1,40 @@
+FreeTShirt # Assigning value '9' to variable '🌮'
+🌮 hatred 9
+
+FreeTShirt # Printing out the value of 3 * 9 --> Expected 27.0
+death 3 iAmLonley 🌮
+
+FreeTShirt # Printing out the value of 27 / 9 --> Expected 3.0
+death 27 Conquer 🌮
+
+FreeTShirt RandoJump
+
+
+FreeTShirt # If 1 is less than or equal to 9 print True, Else print False
+Potato 1 <= 9
+NOTThis Yell true
+
+FrenchFry
+NOTThis Yell false
+
+
+death 0 DangDoors
+
+FreeTShirt data ISummonYouToFulfillYourOath read to_do.txt
+FreeTShirt write data output.txt
+FreeTShirt Yell data
+
+black_cherry hatred TastyƸ
+ice_cream hatred Deliciousness
+
+food ISummonYouToFulfillYourOath black_cherry concat ice_cream
+Yell food
+Yell Ƹ
+
+death random 1 10
+
+FreeTShirts death sort random 3 2 1 5 6 4 12 34 55 89 220 933 12 74 126 49 371
+
+FreeTShirts 1 in 3.5568743e+14 to sort a 17 element long list by using RandomSort
+
+death sort sleep 2 4 3 5 6 10

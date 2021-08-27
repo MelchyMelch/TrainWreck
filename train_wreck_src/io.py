@@ -1,10 +1,11 @@
-def read_from_file():
-    pass
+def read_from_file(filename: str):
+    with open(filename) as f:
+        return f.read()
 
 
-def output_to_console(value: str):
-    # M: Do we need this func or should we just call print()? --> Maybe keep if we decide to get "weird" with it?
-    print(value)
+def write_to_file(filename: str, contents: str):
+    with open(filename, 'w') as f:
+        f.write(contents)
 
 
 def input_from_console(message: str) -> str:
