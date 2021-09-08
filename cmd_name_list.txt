@@ -25,15 +25,24 @@ Multiplication -- --> 'iAmLonley' by CPSuperstore
 Division -- --> 'Conquer' by MelchyMelch
 Digital Root -- --> 'DangDoors' by MelchyMelch
 NEED NAMES BELOW:
-Less Than Condition -- --> '' by
-Greater Than Condition -- --> '' by
-Less Than or Equal to Condition -- --> '' by
-Greater Than or Equal to Condition -- --> '' by
-Func-JumpToRandomLineInCode -- --> '' by
-Read from File -- --> '' by
-Write to File -- --> '' by
-Concat -- --> '' by
-Random Number Generation -- --> '' by
-Sort -- --> '' by
-    random -- --> '' by
-    sleep -- --> '' by
+Less Than Condition -- --> '>' by terminatethemate
+Greater Than Condition -- --> 'regret' by CPSuperstore
+Less Than or Equal to Condition -- --> 'terminatethemate' by CPSuperstore
+Greater Than or Equal to Condition -- --> 'PlantPlants' by MelchyMelch
+Func-JumpToRandomLineInCode -- --> 'LordOfTheRingsBattleForMiddleEarthTwoRiseOfTheWitchKing' by terminatethemate
+Read from File -- --> 'Skim' by MelchyMelch
+Write to File -- --> 'DexterionTheUltimateAnnihilatorOfTheEvilDominionUnderCyborgDemonsArmageddonBattleFateOfTheCrypticWorldInCyberneticTroopersHands ' by terminatethemate
+Concat -- --> 'FishAndChips' by MelchyMelch
+Random Number Generation -- --> 'idk' by CPSuperstore
+Sort -- --> 'WhatIfWeJust' by MelchyMelch
+    random -- --> 'terminatethematescode' by terminatethemate
+    sleep -- --> 'awake' by CPSuperstore
+
+
+STREAM #3
+==========
+Missing Value Error --> "ThinkingCan" by jorbeanzo
+Divide By Zero --> "Sparky" by terminatethemate
+Reading from an Nonexisting File --> "YouDidItYay" by terminatethemate
+Math with numbers and words --> "FailedSuccessfully" by cloudrc
+using wrong command --> "hahaSTINKY" by jorbeanzo

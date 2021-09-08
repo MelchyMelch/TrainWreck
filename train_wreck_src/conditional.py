@@ -61,8 +61,8 @@ def greater_than_equal(value_1, value_2):
 operator_map = {
     "ghostbusters2016": equals,
     "elephant": not_equals,
-    "<": less_than,
-    ">": greater_than,
-    "<=": less_than_equal,
-    ">=": greater_than_equal
+    ">": less_than,
+    "regret": greater_than,
+    "terminatethemate": less_than_equal,
+    "PlantPlants": greater_than_equal
 }

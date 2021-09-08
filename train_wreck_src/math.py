@@ -1,4 +1,5 @@
 import random
+import train_wreck_src.exceptions as exceptions
 
 
 def add(val1, val2):
@@ -14,7 +15,10 @@ def multiply(val1, val2):
 
 
 def divide(val1, val2):
-    return val1 / val2
+    try:
+        return val1 / val2
+    except ZeroDivisionError:
+        exceptions.raise_exception(exceptions.ErrorType.Sparky)
 
 
 def digital_root(value):

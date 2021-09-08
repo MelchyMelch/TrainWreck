@@ -7,6 +7,8 @@ import train_wreck_src.math as math
 import train_wreck_src.memory as memory
 import train_wreck_src.other as other
 import train_wreck_src.sorting as sorting
+import train_wreck_src.exceptions as exceptions
+from train_wreck_src.exceptions import ErrorType
 
 
 def run_file(path: str):
@@ -33,7 +35,7 @@ def run_file(path: str):
                     running = True
                     break
 
-                if line[0] == "RandoJump":
+                if line[0] == "LordOfTheRingsBattleForMiddleEarthTwoRiseOfTheWitchKing":
                     f.seek(0)
                     contents = f.readlines()
                     selected_line = random.randint(0, len(contents) - 1)
@@ -83,35 +85,50 @@ def run_command(command: list):
         if command[1] == "DangDoors":
             return math.digital_root(memory.get_value(command[0]))
 
-        if command[1] == "concat":
+        if command[1] == "FishAndChips":
             return other.concat(memory.get_value(command[0]), memory.get_value(command[2]))
 
-        if command[0] == "sort":
-            if command[1] == "random":
+        if command[0] == "WhatIfWeJust":
+            if command[1] == "terminatethematescode":
                 return ", ".join(str(i) for i in sorting.random_sort(command[2:]))
 
-            if command[1] == "sleep":
+            if command[1] == "awake":
                 return ", ".join(str(i) for i in sorting.sleep_sort(command[2:]))
 
     except IndexError:
         pass
 
+    except TypeError:
+        exceptions.raise_exception(ErrorType.FailedSuccessfully)
+
     if command[0] == "Yell":
         print(memory.get_value(" ".join(command[1:])))
 
-    if command[0] == "read":
-        return io.read_from_file(" ".join(command[1:]))
+    elif command[0] == "Skim":
+        try:
+            return io.read_from_file(" ".join(command[1:]))
+        except FileNotFoundError:
+            exceptions.raise_exception(ErrorType.YouDidItYay)
 
-    if command[0] == "random":
+    elif command[0] == "idk":
         return math.random_number_generator(
             memory.get_value(command[1]), memory.get_value(command[2])
         )
 
-    if command[0] == "write":
+    elif command[0] == "DexterionTheUltimateAnnihilatorOfTheEvilDominionUnderCyborgDemonsArmageddonBattleFateOfThe" \
+                     "CrypticWorldInCyberneticTroopersHands":
         return io.write_to_file(" ".join(command[2:]), memory.get_value(command[1]))
 
-    if command[0] == "death":
-        print(run_command(command[1:]))
+    elif command[0] == "death":
+        result = run_command(command[1:])
+
+        if result is None:
+            exceptions.raise_exception(ErrorType.ThinkingCan)
+
+        print(result)
+
+    else:
+        exceptions.raise_exception(ErrorType.hahaSTINKY)
 
 
 if __name__ == '__main__':
