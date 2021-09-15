@@ -46,3 +46,9 @@ Divide By Zero --> "Sparky" by terminatethemate
 Reading from an Nonexisting File --> "YouDidItYay" by terminatethemate
 Math with numbers and words --> "FailedSuccessfully" by cloudrc
 using wrong command --> "hahaSTINKY" by jorbeanzo
+
+
+STREAM #4
+=========
+Instantiate A List to a Variable --> "console.output()" by terminatethemate
+Set at Index --> "WiggleIn" by MelchyMelch

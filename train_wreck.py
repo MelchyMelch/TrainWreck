@@ -8,6 +8,7 @@ import train_wreck_src.memory as memory
 import train_wreck_src.other as other
 import train_wreck_src.sorting as sorting
 import train_wreck_src.exceptions as exceptions
+import train_wreck_src.data_structures as data_structures
 from train_wreck_src.exceptions import ErrorType
 
 
@@ -88,6 +89,31 @@ def run_command(command: list):
         if command[1] == "FishAndChips":
             return other.concat(memory.get_value(command[0]), memory.get_value(command[2]))
 
+        if command[1] == "console.output()":
+            memory.set_value(data_structures.List(command[2:]), command[0])
+            return 1
+
+        if command[1] == "remove":
+            memory.get_value(command[0]).append(other.format_data(command[2])) # Melch did a thing - 14/9/21
+                                                                               # CPSuperstore was proud - 14/9/21
+            return 1
+
+        if command[1] == "WiggleIn":
+            try:
+                memory.get_value(command[0])[int(command[3])] = other.format_data(command[2])
+            except IndexError:
+                exceptions.raise_exception(ErrorType.killItWithFire)
+
+            return 1
+
+        if command[1] == "cloudrc":
+            try:
+                del memory.get_value(command[0])[int(command[2])]
+            except IndexError:
+                exceptions.raise_exception(ErrorType.killItWithFire)
+
+            return 1
+
         if command[0] == "WhatIfWeJust":
             if command[1] == "terminatethematescode":
                 return ", ".join(str(i) for i in sorting.random_sort(command[2:]))
@@ -126,6 +152,12 @@ def run_command(command: list):
             exceptions.raise_exception(ErrorType.ThinkingCan)
 
         print(result)
+
+    elif command[0] == "friedChicken":
+        try:
+            return memory.get_value(command[1])[int(command[2])]
+        except IndexError:
+            exceptions.raise_exception(ErrorType.killItWithFire)
 
     else:
         exceptions.raise_exception(ErrorType.hahaSTINKY)

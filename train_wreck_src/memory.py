@@ -1,3 +1,4 @@
+import train_wreck_src.other as other
 
 memory_heap: {} = {}
 
@@ -18,8 +19,4 @@ def get_value(name: str):
 
 
 def set_value(value, key):
-    try:
-        value = float(value)
-    except ValueError:
-        value = value.replace("Æ¸", " ")
-    memory_heap[key] = value
+    memory_heap[key] = other.format_data(value)

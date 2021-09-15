@@ -1,5 +1,6 @@
 import enum
 import random
+import traceback
 
 from colorama import Fore, init
 
@@ -12,6 +13,7 @@ class ErrorType(enum.Enum):
     YouDidItYay = "YouDidItYay"
     FailedSuccessfully = "FailedSuccessfully"
     hahaSTINKY = "hahaSTINKY"
+    killItWithFire = "killItWithFire"
 
 
 def raise_exception(message: ErrorType):
@@ -41,7 +43,7 @@ def get_random_fact() -> str:
         "High heels were originally worn by men.",
         "Stop signs used to be yellow.",
         "MelchyMelch's internet is poop",
-        "New York was briefly named \"New Orange.\"",
+        "New York was briefly named \"New Orange\".",
         "There was a successful Tinder match in Antarctica in 2014.",
         "Most wasabi we eat in the U.S. isn't really wasabi.",
         "Amelia Earhart and Eleanor Roosevelt once went on a joyride.",
